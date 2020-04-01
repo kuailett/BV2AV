@@ -31,9 +31,9 @@ def main():
         if av_bv == "q  " or av_bv == "Q  ":
             quit()
         elif head in av:
-            print(enc(int(av_bv[2:-1])))
+            print(enc(int(av_bv[2:-2])))
         elif head in bv:
-            print("av", dec("BV" + av_bv[2:-1]), sep="")
+            print("av", dec("BV" + av_bv[2:-2]), sep="")
         else:
             print("你的输入有误请重新输入")
 
