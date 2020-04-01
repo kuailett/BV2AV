@@ -24,11 +24,11 @@ def enc(x):
 
 def main():
     while True:
-        av_bv = input("请输入BV或AV号,需要带上BV或AV前缀(输入q以退出):") + " "
+        av_bv = input("请输入BV或AV号,需要带上BV或AV前缀(输入q以退出):") + "  "
         head = str(av_bv[0]) + str(av_bv[1])
         av = ["av", "AV", "Av", "aV"]
         bv = ["bv", "BV", "Bv", "bV"]
-        if av_bv == "q " or av_bv == "Q ":
+        if av_bv == "q  " or av_bv == "Q  ":
             quit()
         elif head in av:
             print(enc(int(av_bv[2:-1])))
